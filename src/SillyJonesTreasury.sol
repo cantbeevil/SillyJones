@@ -11,6 +11,8 @@ contract SillyJonesTreasury is ISillyJonesTreasury {
     bytes32 private constant DEPLOYER_ROLE = keccak256("DEPLOYER_ROLE");
     uint256 private totalDeposited_;
 
+    event Deployment(address indexed deployer, uint256 amount);
+
     constructor(IJonesAsset _jonesAsset) {
         jonesAssetToken = _jonesAsset;
     }
@@ -23,6 +25,7 @@ contract SillyJonesTreasury is ISillyJonesTreasury {
             _amount
         );
         totalDeposited_ += _amount;
+        emit Deployment(_from, _amount);
     }
 
     function totalDeposited() external view returns (uint256) {
