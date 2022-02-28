@@ -6,8 +6,9 @@ SillyJones is a dapp that lets you bond **x** [jAsset tokens](https://docs.jones
 This is a fun little project I created to demonstrate my Solidity skills and understanding of DEFI.
 
 ## Dependencies
-* Foundry/Forge for testing
-* * Foundry/Cast for deployment
+* Foundry 
+* * Forge for testing
+* * Cast for deployment
 * Openzapplin for ERC20 and a few other libraries
 
 # Contracts
