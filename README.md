@@ -7,8 +7,8 @@ This is a fun little project I created to demonstrate my Solidity skills and und
 
 ## Dependencies
 * Foundry 
- * Forge for testing
- * Cast for deployment
+** Forge for testing
+** Cast for deployment
 * Openzapplin for ERC20 and a few other libraries
 
 # Contracts
